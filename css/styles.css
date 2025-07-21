@@ -79,7 +79,7 @@ h3 {font-size: 1.25rem;}
 }
 
 .posts h2 {
-    margin-bottom: 1.5rem;
+    margin-bottom: -0.22rem;
 }
 
 .posts__content {
@@ -89,7 +89,7 @@ h3 {font-size: 1.25rem;}
 
 .posts__card {
     display: grid;
-    grid-template-rows: auto auto auto;
+    /* grid-template-rows: auto auto auto; */
     grid-template-columns: repeat(12, 1fr);
     gap: 0.75rem;
     max-width: 100%;
@@ -137,13 +137,37 @@ h3 {font-size: 1.25rem;}
     padding: 2rem;
 }
 
-/* media query for screens wider than 400px  */
+/* media query for screens wider than 800px  */
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 800px) {
 
     h1 {font-size: 2rem;}
     h2 {font-size: 2rem;}
     h3 {font-size: 1.75rem;}
+
+    .site-cover {aspect-ratio: 4/3;}
+
+     .site-nav a {
+        font-size: 1.25rem;
+     }
+
+    .site-profile {
+    /* position: absolute; */
+    bottom: -7rem;} 
+    
+    .site-profile__pic {
+    width: 12rem;
+    height: 12rem;}
+
+    .posts {
+    margin-top: 10rem;}
+
+    .posts__card img {
+    width: 100%;
+    border-radius: 0.5rem;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    grid-column: 1 / -1;
 }
 
 
