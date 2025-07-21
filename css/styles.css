@@ -113,6 +113,17 @@
     grid-column: 1 / 10;
 }
 
+.read-more {
+    grid-column: 1/-1;
+    background-color:blueviolet;
+    color: white;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin: auto;
+    text-decoration: none;
+}
+
 /* footer */
 
 .site-footer {
@@ -120,5 +131,7 @@
     text-align: center;
     padding: 2rem;
 }
+
+/* media query for screens wider than  */
 
 
