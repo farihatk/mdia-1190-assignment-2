@@ -42,7 +42,7 @@ h3 {font-size: 1.25rem;}
 
 .site-cover {
     background-image: url("/images/site-banner.jpg");
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 4/3;
     background-size: cover;
     position: relative;
 }
@@ -85,15 +85,15 @@ h3 {font-size: 1.25rem;}
 .posts__content {
     display: grid;
     gap: 2rem;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 0 1rem;
 }
 
 .posts__card {
-    display: grid;
-    /* grid-template-rows: auto auto auto; */
-    grid-template-columns: repeat(12, 1fr);
+    display: grid; /*if i remove this, it squishes the text together*/
+    grid-column: span 12;
     gap: 0.75rem;
     max-width: 100%;
-    /* margin: 0 auto; */
     padding: 1rem;
     border-radius: 0.5rem;
     background: #fff;
@@ -105,17 +105,6 @@ h3 {font-size: 1.25rem;}
     border-radius: 0.5rem;
     aspect-ratio: 3/2;
     object-fit: cover;
-    grid-column: 1 / -1;
-}
-
-.posts__card h3 {
-    /* font-size: 1.25rem; */
-    /* font-weight: bold; */
-    grid-column: 1 / -1;
-}
-
-.posts__card p {
-    grid-column: 1 / 10;
 }
 
 .read-more {
@@ -145,7 +134,7 @@ h3 {font-size: 1.25rem;}
     h2 {font-size: 2rem;}
     h3 {font-size: 1.75rem;}
 
-    .site-cover {aspect-ratio: 4/3;}
+    .site-cover {aspect-ratio: 5/2;}
 
      .site-nav a {
         font-size: 1.25rem;
@@ -162,12 +151,19 @@ h3 {font-size: 1.25rem;}
     .posts {
     margin-top: 10rem;}
 
-    .posts__card img {
-    width: 100%;
-    border-radius: 0.5rem;
-    aspect-ratio: 3/2;
-    object-fit: cover;
-    grid-column: 1 / -1;
+    .posts__card {
+        grid-column: span 6;
+    }
 }
+
+@media screen and (min-width: 1400px) {
+
+    .site-cover {aspect-ratio: 5/3;}
+
+    .posts__card {
+        grid-column: span 4;
+    }
+}
+
 
 
