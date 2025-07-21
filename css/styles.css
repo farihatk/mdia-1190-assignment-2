@@ -9,6 +9,11 @@
 .site-header {
     width: 100%;
     padding: 1rem;
+    position: fixed;
+    /* top: 0;
+    left: 0; */
+    background-color: white;
+    z-index: 1000;
 }
 
 .site-header__container {
@@ -80,9 +85,10 @@
 .posts__card {
     display: grid;
     grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(12, 1fr);
     gap: 0.75rem;
     max-width: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding: 1rem;
     border-radius: 0.5rem;
     background: #fff;
@@ -92,13 +98,27 @@
 .posts__card img {
     width: 100%;
     border-radius: 0.5rem;
-    aspect-ratio: 1/1;
+    aspect-ratio: 3/2;
     object-fit: cover;
+    grid-column: 1 / -1;
 }
 
 .posts__card h3 {
     font-size: 1.25rem;
     font-weight: bold;
+    grid-column: 1 / -1;
+}
+
+.posts__card p {
+    grid-column: 1 / 10;
+}
+
+/* footer */
+
+.site-footer {
+    background-color: rgb(213, 174, 218);
+    text-align: center;
+    padding: 2rem;
 }
 
 
