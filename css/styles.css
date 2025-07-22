@@ -79,7 +79,7 @@ h3 {font-size: 1.25rem;}
 }
 
 .posts h2 {
-    margin-bottom: -0.22rem;
+    margin-bottom: 1.5rem;
 }
 
 .posts__content {
@@ -126,7 +126,7 @@ h3 {font-size: 1.25rem;}
     padding: 2rem;
 }
 
-/* media query for screens wider than 800px  */
+/* media query for screens wider than 400px  */
 
 @media screen and (min-width: 800px) {
 
@@ -156,7 +156,7 @@ h3 {font-size: 1.25rem;}
     }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
 
     .site-cover {aspect-ratio: 5/3;}
 
