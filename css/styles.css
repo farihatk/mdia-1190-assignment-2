@@ -156,9 +156,9 @@ h3 {font-size: 1.25rem;}
     }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
 
-    .site-cover {aspect-ratio: 5/3;}
+    .site-cover {aspect-ratio: 6/2;}
 
     .posts__card {
         grid-column: span 4;
