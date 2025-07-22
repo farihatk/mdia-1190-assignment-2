@@ -68,7 +68,6 @@ h3 {font-size: 1.25rem;}
 
 .site-profile__name {
     margin-top: 0.625rem;
-    /* font-size: 1.25rem; */
 }
 
 /* Posts */
@@ -141,7 +140,6 @@ h3 {font-size: 1.25rem;}
      }
 
     .site-profile {
-    /* position: absolute; */
     bottom: -7rem;} 
     
     .site-profile__pic {
@@ -158,7 +156,7 @@ h3 {font-size: 1.25rem;}
 
 @media screen and (min-width: 1200px) {
 
-    .site-cover {aspect-ratio: 5/3;}
+    .site-cover {aspect-ratio: 6/3;}
 
     .posts__card {
         grid-column: span 4;
