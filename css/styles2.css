@@ -1,0 +1,143 @@
+:root {
+    --bold: 700;
+    --semi-bold: 600;
+    --extra-bold: 800;
+    --lavendar: rgb(245, 216, 252);
+    --violet: rgb(61, 34, 86);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background-color: #F0D7D7;
+}
+
+/* Typography */
+h1 {
+    font-size: 1.5rem;
+    font-family: "Fascinate Inline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h2 {
+    font-size: 1.25rem;
+    font-weight: var(--bold);
+}
+h3 {font-size: 1.25rem;}
+
+
+/* header */
+
+.site-header {
+    width: 100%;
+    padding: 1rem;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 .125rem .625rem rgba(0,0,0,.08); 
+    z-index: 1000;
+}
+
+.site-header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.site-nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.site-nav a {
+    text-decoration: none;
+    font-size: 0.80rem;
+    font-weight: var(--semi-bold);
+    color: black;
+}
+
+/* Site Banner */
+
+.site-banner {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("../images/site-banner.jpg");
+    aspect-ratio: 4/3;
+    background-size: cover;
+    position: relative;
+}
+
+.site-banner__text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    /* display: flex;
+    align-items: center;
+    justify-content: left;
+    z-index: 2; */
+}
+
+.site-banner__text h2 {
+    font-size: 2rem;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    color: white;
+    margin-top: 6.5rem;
+}
+
+.site-banner__text p {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    color: white;
+}
+
+/* Blog and blog nav */
+
+.blog {
+    margin: 2.5rem 0.5rem;
+}
+
+.blog-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-content h2 {
+    font-size: 2rem;
+}
+
+.blog-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-top: 0.5rem;
+}
+
+.blog-nav a {
+    text-decoration: none;
+    font-size: 0.75rem;
+    color: black;
+}
+
+
+
+/* Intro paragraph */
+
+/* .intro-text {
+    margin: 1.40rem;
+    text-align: justify;
+    padding: 0.5rem;
+    line-height: 1.5;
+    font-size: 0.75rem;
+}
+
+.intro-text__p1 {
+    font-weight: var(--semi-bold);
+    padding-bottom: 0.25rem;
+} */
