@@ -230,14 +230,16 @@ h3 {font-size: 1.25rem;}
 
 .blog-preview__text h4 {
     padding-bottom: 0.5rem;
+    font-size: 1.5rem;
     font-weight: var(--semi-bold);
+}
+
+.blog-preview__text p {
+    line-height: 1.5rem;
 }
 
 .read-more {
     margin-top: 1rem;
-    /* background-color: #FE5353;
-    border-radius: 2rem;
-    display: inline-block; */
 }
 
 .read-more a {
@@ -338,6 +340,8 @@ h3 {font-size: 1.25rem;}
     padding: 1rem;
     background-color: #26150F;
     color: white;
+    text-align: center;
+
 }
 
 @media screen and (min-width: 768px) {
