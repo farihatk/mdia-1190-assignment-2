@@ -253,7 +253,25 @@ h3 {font-size: 1.25rem;}
 
 /* Blog.html */
 .blog-page {
-    padding-top: 5rem;
+    padding-top: 10rem;
+}
+
+/* .blog-content {
+    grid-column: auto / span 12;
+} */
+
+.blog-page__title {
+    grid-column: auto / span 12;
+}
+
+.blog-page__image {
+    grid-column: auto / span 12;
+}
+
+
+
+.blog-page__article {
+    grid-column: auto / span 12;
 }
 
 /* footer */
