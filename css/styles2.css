@@ -251,6 +251,11 @@ h3 {font-size: 1.25rem;}
     }
 }
 
+/* Blog.html */
+.blog-page {
+    padding-top: 5rem;
+}
+
 /* footer */
 
 .site-footer {
