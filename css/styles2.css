@@ -67,6 +67,8 @@ h3 {font-size: 1.25rem;}
     color: black;
 }
 
+
+
 /* Site Banner */
 
 .site-banner {
@@ -88,6 +90,19 @@ h3 {font-size: 1.25rem;}
     align-items: left;
     justify-content: center;
     z-index: 2;
+    animation: fadeInleft 0.8s ease-out forwards;
+}
+
+@keyframes fadeInleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .site-banner__text h2 {
