@@ -6,13 +6,39 @@
     --violet: rgb(61, 34, 86);
 }
 
-
+html, body {
+    height: 100%;
+}
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     background-color: #F0D7D7;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
+}
+.site-footer {
+    margin-top: auto;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
+}
+.site-footer {
+    margin-top: auto;
 }
 
 /* Typography */
@@ -252,27 +278,59 @@ h3 {font-size: 1.25rem;}
 }
 
 /* Blog.html */
+
 .blog-page {
     padding-top: 10rem;
+    margin: 0 2rem;
 }
 
-/* .blog-content {
-    grid-column: auto / span 12;
-} */
+.blog-page__wrapper {
+    align-items: start;
+}
 
-.blog-page__title {
+.blog-post {
+    grid-column: auto / span 12;
+    gap: 1rem;
+}
+
+.blog-post h2 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.blog-post img {
+    aspect-ratio: 16/9;
+    width: 100%;
+    object-fit: cover;
+    padding-bottom: 1rem;
+}
+
+.blog-post p {
+    padding-bottom: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.sidebar {
     grid-column: auto / span 12;
 }
 
-.blog-page__image {
-    grid-column: auto / span 12;
+.sidebar img {
+    aspect-ratio: 1/1;
+    width: 100%;
+    object-fit: cover;
+    padding-bottom: 1rem;
+    border-radius: 50%;
 }
 
-
-
-.blog-page__article {
-    grid-column: auto / span 12;
+.sidebar h3 {
+    padding-bottom: 1rem;
+    font-weight: var(--semi-bold);
 }
+
+.sidebar p {
+    line-height: 1.5rem;
+}
+
 
 /* footer */
 
@@ -375,6 +433,49 @@ h3 {font-size: 1.25rem;}
 
     .blog-content {
         padding: 0 1rem;
+    }
+
+    .blog-page {
+    padding-top: 10rem;
+    margin: 0 2rem;
+    }
+
+    .blog-page__wrapper {
+        align-items: start;
+    }
+
+    .blog-post {
+        grid-column: auto / span 8;
+        gap: 1rem;
+    }
+
+    .blog-post h2 {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .blog-post img {
+        aspect-ratio: 16/9;
+        width: 100%;
+        object-fit: cover;
+        padding-bottom: 1rem;
+    }
+
+    .sidebar {
+        grid-column: 11 / 13;
+        padding-top: 3rem;
+    }
+
+    .sidebar img {
+        aspect-ratio: 1/1;
+        width: 100%;
+        object-fit: cover;
+        padding-bottom: 1rem;
+    }
+
+    .sidebar h3 {
+        padding-bottom: 1rem;
+        font-weight: var(--semi-bold);
     }
         
 }
